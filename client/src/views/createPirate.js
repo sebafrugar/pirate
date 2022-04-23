@@ -11,7 +11,7 @@ const Createpirate = () => {
     const createPirate = (values) => {
         console.log(values);
 
-        axios.post('http://localhost:8000/api/pirates/new', values)
+        axios.post('/api/pirates/new', values)
         .then(res=>{
             console.log("exitoso");
             navigate("/pirates");
